@@ -13,11 +13,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = sanitize($_POST['email']);
     $gender = sanitize($_POST['gender']);
     $subject = sanitize($_POST['subject']);
+    $country = sanitize($_POST['country']);
     $message = sanitize($_POST['message']);
 
     echo '<pre>';
     print_r($_POST); // TESTING // 
     echo '</pre>';
+    include 'emailing.php';
 }
 ?>
 

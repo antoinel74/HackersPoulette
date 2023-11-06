@@ -4,5 +4,5 @@
     <meta name="keywords" content="hackers poulette php" />
     <meta name="description" content="Sanitized contact form in php" />
     <meta name="author" content="Antoine LANSMAN" />
-    <title>Contact The Hackers Club ç</title>
+    <title>Contact The Hackers Club</title>
 </head>
