@@ -2,8 +2,7 @@
 
 require 'components/head.php';
 echo '
-<section class="container">
-<h1>Contact us</h1>';
+<section class="container">';
 require 'contact.php';
 echo '</section>';
 

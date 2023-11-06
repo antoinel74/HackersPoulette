@@ -5,4 +5,5 @@
     <meta name="description" content="Sanitized contact form in php" />
     <meta name="author" content="Antoine LANSMAN" />
     <title>Contact The Hackers Club</title>
+    <link rel="stylesheet" href="/assets/style/main.css">
 </head>

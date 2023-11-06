@@ -15,7 +15,6 @@ function validateForm() {
   } else if (!emailPattern.test(emailValue)) {
     emailError.textContent =
       "Invalid email format. Please enter a valid email address.";
-    hasErrors = true;
     return false;
   } else {
     emailError.textContent = "";
