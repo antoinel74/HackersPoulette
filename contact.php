@@ -24,7 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 <form class="contact-form" method="POST" action="" id="contact-form" onsubmit="return validateForm()">
-    <h1>Contact us</h1>
     <div class="informations">
         <div class="infos infos--left">
             <label for="firstname">First name :</label>
