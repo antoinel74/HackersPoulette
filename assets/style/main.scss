@@ -5,6 +5,9 @@
 body {
   font-family: $mainFont;
   width: 100%;
+  height: 100vh;
+  position: relative;
+  line-height: 1.4;
 }
 
 .container {
@@ -24,6 +27,9 @@ body {
 
 .form-container {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: $small;
 }
 
@@ -31,6 +37,8 @@ form {
   width: 100%;
   display: flex;
   flex-direction: column;
+  font-family: verdana;
+  font-size: 0.85rem;
   .informations {
     display: flex;
     .infos {
@@ -42,11 +50,16 @@ form {
 
   select {
     margin-bottom: $small;
+    margin-top: 0.2rem;
     height: 30px;
     border: none;
     border-radius: 2px;
     max-width: 280px;
     background-color: $lightGrey;
+    &:focus {
+      outline: none;
+      border: 2px solid $green;
+    }
   }
 
   input {
@@ -55,7 +68,13 @@ form {
 
   textarea {
     height: 180px;
+    margin-top: 0.2rem;
     margin-bottom: $small;
+    font-family: inherit;
+    &:focus {
+      outline: none;
+      border: 2px solid $green;
+    }
   }
 }
 
@@ -66,16 +85,43 @@ h1 {
   color: $white;
 }
 
-p {
+.sub {
   color: $white;
-  margin: 0 1rem;
+  margin: 0 3rem 0 1rem;
 }
 
 .success-msg {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: $small;
   color: $green;
 }
 .fail-msg {
+  @extend .success-msg;
   color: red;
+}
+
+.submitBtn {
+  background-color: $green;
+  color: $white;
+  font-family: $mainFont;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  justify-content: flex-end;
+  img {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 768px) {
@@ -93,8 +139,9 @@ p {
   }
   .form-container {
     width: 100%;
+    margin: 1rem 0 0 0;
   }
-  p {
+  .sub {
     padding-bottom: $medium;
   }
   h1 {
@@ -102,5 +149,7 @@ p {
   }
   form {
     width: 80%;
+    margin-top: 1rem;
+    margin-left: 1rem;
   }
 }
