@@ -9,6 +9,12 @@ function validateForm() {
   let messageValue = messageInput.value;
   let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
+  let honeypot = document.getElementById("honeypot");
+  let honeypotValue = honeypot.value;
+
+  if (!honeypot == "") {
+    return false;
+  }
   if (emailValue === "") {
     emailError.textContent = "Email is required.";
     return false;

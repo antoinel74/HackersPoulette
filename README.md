@@ -10,7 +10,7 @@ and consist to a small contact form built in `PHP` with client-side validation i
 - Server side validation and sanitization
 - Client side validation
 - On submit, send a mail to the support with the ticket (using PHPMailer+ MailHog)
-- Honeypot anti-spam technique (in progress)
+- Honeypot anti-spam technique
 
 ## Built with
 

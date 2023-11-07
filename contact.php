@@ -287,7 +287,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <option value="human">Human</option>
                 <option value="other">Other</option>
             </select>
-            <div class="error-message" id="country-error"></div>
         </div>
     </div>
 
@@ -301,6 +300,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <label for="message">Message :</label>
     <textarea type="text" style="resize:none" name="message" placeholder="Type your message here ..." id="message"></textarea>
     <div class="error-message" id="message-error"></div>
+
+    <div style="display:none">
+        <label for="honeypot" aria-hidden="true">Honeypot</label>
+        <input type="text" name="honeypot" id="honeypot">
+    </div>
 
     <input type="submit" name="submit" value="Submit" class="submitBtn">
 
